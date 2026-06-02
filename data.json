@@ -1,0 +1,220 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/321tube-downloader",
+  "serply_link": "https://serp.ly/321tube-downloader",
+  "app_name": "321Tube Video Downloader",
+  "short_description": "Download & Save 321tube Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Downloader for 321Tube is a browser extension for saving videos from 321Tube.com as standard video files. Open a supported 321Tube video page, press play if needed, use the in-page download button or extension popup, choose an available format, and save through your browser. No desktop app or command-line workflow required.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/321tube-downloader-fullscreen-01-0344615c79.webp",
+    "https://apps.serp.co/media/optimized-products/321tube-downloader-fullscreen-02-b81b6b302d.webp",
+    "https://apps.serp.co/media/optimized-products/321tube-downloader-fullscreen-03-42c29f2de1.webp",
+    "https://apps.serp.co/media/optimized-products/321tube-downloader-fullscreen-04-0e631f1ba5.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "How do I download a 321Tube video?",
+      "answer": "Open a supported 321Tube video page, press play, then use the player download button, the extension icon, or the right-click menu."
+    },
+    {
+      "question": "What formats can it detect?",
+      "answer": "The extension normalizes direct MP4 and HLS/M3U8-style media URLs when they are exposed by the page or related playback hosts."
+    },
+    {
+      "question": "What quality options are available?",
+      "answer": "Quality depends on what the source exposes. The extension attempts to infer resolution from labels or URLs and sorts available formats by height where possible."
+    },
+    {
+      "question": "Where are downloads saved?",
+      "answer": "The extension uses an organized 321Tube download folder for saved files."
+    },
+    {
+      "question": "Do I need to press play first?",
+      "answer": "Usually yes. Many video pages only expose the final stream after playback starts or after player scripts run."
+    },
+    {
+      "question": "Does it use a remote downloader server?",
+      "answer": "No. The extension is designed around in-browser detection and download processing. Authentication and update checks call SERP and GitHub services, but media processing is local to the extension pipeline."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Host permissions for 321tube.com, subdomains, turboviplay.com, and turbovidhls.com"
+    },
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Purpose-built around the 321Tube playback surface and TurboVid-related hosts",
+    "In-browser media detection with a player-level download button and context-menu access",
+    "Quality selection where source variants are available",
+    "Shared offscreen stream processing for direct MP4 and HLS candidates",
+    "Organized download folder and progress management",
+    "321Tube-specific app identity, product URL, entitlement, and update-check configuration",
+    "Host permissions for 321tube.com, subdomains, turboviplay.com, and turbovidhls.com",
+    "In-page player button targeting the 321Tube player wrapper",
+    "Generic static-media extraction for direct MP4 and HLS candidates",
+    "Filters common ad, banner, VAST, thumbnail, sprite, preview, and timeline URLs",
+    "Right-click context menu for page and video contexts",
+    "Shared download manager with progress UI",
+    "Shared offscreen processing for stream and file download work",
+    "OTP activation through auth.serp.co",
+    "3 free downloads included before paid license flow"
+  ],
+  "content": {
+    "why": [
+      "Videos on 321Tube are often embedded behind player wrappers and TurboVid playback hosts. A standard browser right-click save rarely exposes the final video stream, and generic web downloaders can confuse ad previews, thumbnails, and timeline data with actual video content. This makes saving a video for offline viewing unnecessarily complicated.",
+      "321tube Downloader solves this by working directly inside the page you are viewing. It checks video and source tags, metadata, script content, and observed media requests to find playable candidates. The extension filters out obvious ad and preview URLs, presents the detected formats in a clean interface, and lets you save through your browser with one click."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open 321Tube and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Install the 321tube Downloader extension from the latest GitHub release.",
+      "Open your browser and navigate to a supported 321Tube video page.",
+      "Press the play button on the video player so the page exposes the media stream.",
+      "Look for the download button that appears on the video player, or click the extension icon in your toolbar.",
+      "The extension popup will show the detected media candidates from the page.",
+      "Select the format or quality option you want to download.",
+      "Click the download button and wait for the processing to complete.",
+      "Save the final MP4 file to your preferred location."
+    ],
+    "supported_formats": [
+      "Input: Direct MP4 URLs and HLS/M3U8 streams exposed by the 321Tube page or related TurboVid playback hosts",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "321Tube viewers who want a simple browser workflow for saving videos for offline viewing",
+      "Non-technical users who prefer a button-based extension over copy-and-paste downloader sites",
+      "Users who want to avoid command-line tools or desktop applications",
+      "Anyone who needs to choose from detected formats where the source exposes multiple quality options"
+    ],
+    "use_cases": [
+      "Save a 321Tube video for offline viewing on a commute or trip",
+      "Capture videos exposed through 321Tube and TurboVid playback URLs",
+      "Choose from detected direct MP4 or HLS candidates where available",
+      "Use the in-page player button instead of searching through page source code",
+      "Use the right-click context menu for quick access while browsing"
+    ],
+    "troubleshooting": [
+      "No download options appear on the page Refresh the page, press play on the video, and wait a few seconds for the stream to load. Then open the extension popup again.",
+      "The player button does not show Make sure you are on a supported 321Tube video page and the video player has loaded. Try refreshing the page.",
+      "The download fails or stops mid-way Check your internet connection and try again. Some longer videos may take a moment to process through the offscreen pipeline.",
+      "Only one format is available The quality options depend on what the source exposes. Some pages may only provide a single stream.",
+      "The extension asks me to sign in You need to activate the extension with your email address. The trial includes 3 free downloads after activation."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported 321Tube page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "Press play on the video first so the extension can detect the media stream",
+      "Available quality options depend on what the source provides"
+    ],
+    "about": [
+      "321Tube is an adult video platform that hosts content from a variety of creators and studios. This extension helps viewers save videos from 321Tube for offline access through a simple browser-based workflow."
+    ]
+  },
+  "serpx_link": "https://serpx.link/321tube-downloader",
+  "github_topics": [
+    "321tube-download",
+    "321tube-downloader",
+    "321tube-video-downloader",
+    "321tube-video-downloader-online",
+    "321tube-video-downloader-mac",
+    "321tube-video-downloader-window",
+    "321tube-video-downloader-free",
+    "321tube-video-downloader-extension",
+    "321tube-video-downloader-app",
+    "321tube-video-downloader-chrome",
+    "321tube-video-downloader-from-url",
+    "how-to-download-321tube-videos",
+    "how-to-download-321tube-videos-mac",
+    "how-to-download-321tube-videos-windows",
+    "how-to-download-321tube-videos-online",
+    "how-to-download-321tube-videos-free",
+    "how-to-download-from-321tube",
+    "how-to-download-videos-from-321tube",
+    "download-321tube-videos",
+    "321tube-video-tutorial",
+    "save-321tube-videos",
+    "321tube-video-content-saver",
+    "how-to-download-321tube-videos-for-free"
+  ],
+  "hashtags": [
+    "#321TubeDownload",
+    "#321TubeDownloader",
+    "#321TubeVideoDownloader",
+    "#321TubeVideoDownloaderOnline",
+    "#321TubeVideoDownloaderMac",
+    "#321TubeVideoDownloaderWindow",
+    "#321TubeVideoDownloaderFree",
+    "#321TubeVideoDownloaderExtension",
+    "#321TubeVideoDownloaderApp",
+    "#321TubeVideoDownloaderChrome",
+    "#321TubeVideoDownloaderFromURL",
+    "#HowToDownload321TubeVideos",
+    "#HowToDownload321TubeVideosMac",
+    "#HowToDownload321TubeVideosWindows",
+    "#HowToDownload321TubeVideosOnline",
+    "#HowToDownload321TubeVideosFree",
+    "#HowToDownloadFrom321Tube",
+    "#HowToDownloadVideosFrom321Tube",
+    "#Download321TubeVideos",
+    "#321TubeVideoTutorial",
+    "#Save321TubeVideos",
+    "#321TubeVideoContentSaver",
+    "#HowToDownload321TubeVideosForFree"
+  ],
+  "youtube_tags": [
+    "321Tube Download",
+    "321Tube Downloader",
+    "321Tube Video Downloader",
+    "321Tube Video Downloader Online",
+    "321Tube Video Downloader Mac",
+    "321Tube Video Downloader Window",
+    "321Tube Video Downloader Free",
+    "321Tube Video Downloader Extension",
+    "321Tube Video Downloader App",
+    "321Tube Video Downloader Chrome",
+    "321Tube Video Downloader From URL",
+    "How To Download 321Tube Videos",
+    "How To Download 321Tube Videos Mac",
+    "How To Download 321Tube Videos Windows",
+    "How To Download 321Tube Videos Online",
+    "How To Download 321Tube Videos Free",
+    "How To Download From 321Tube",
+    "How To Download Videos From 321Tube",
+    "Download 321Tube Videos",
+    "321Tube Video Tutorial",
+    "Save 321Tube Videos",
+    "321Tube Video Content Saver",
+    "How To Download 321Tube Videos For Free"
+  ],
+  "link_gist": "https://gist.github.com/devinschumacher/75ab4b6cf1d9ad29ceb7bc6828e75bb4"
+}
